@@ -23,8 +23,9 @@ class YyetsWidget(QWidget):
         # create and set main layout
         layout = QGridLayout()
         self.setLayout(layout)
-        # set window size
+        # set window size and title
         self.setMinimumSize(QtCore.QSize(2500, 1500))
+        self.setWindowTitle('YYeTs搜索器')
 
         self.filters = {}
         # create each filter
