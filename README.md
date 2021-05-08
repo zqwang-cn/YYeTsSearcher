@@ -10,6 +10,10 @@
 ```bash
 mongorestore --gzip --archive=yyets_mongo.gz
 ```
+4. 启动MongoDB
+```bash
+sudo systemctl start mongod
+```
 
 ## qt搜索器
 
@@ -22,3 +26,6 @@ pip install -r requirements.txt
 ```bash
 python qt_searcher.py
 ```
+
+预览：
+![alt qt_searcher snapshot](snapshot/qt_searcher.png)
