@@ -62,6 +62,7 @@ class YyetsWidget(QWidget):
         keyword_label.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(keyword_label, i, 0)
         self.keyword_edit = QLineEdit()
+        self.keyword_edit.returnPressed.connect(self.search_button_clicked)
         layout.addWidget(self.keyword_edit, i, 1, 1, 4)
         search_button = QPushButton('搜索')
         search_button.clicked.connect(self.search_button_clicked)
